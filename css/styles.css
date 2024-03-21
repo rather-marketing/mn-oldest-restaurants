@@ -136,18 +136,22 @@ blockquote {
 /* Responsive layout - one column for tablets */
 @media only screen and (max-width: 1000px) {
     #grid 
-      flex-direction: column;
+        flex-direction: column;}
+    h6 {
+        margin-bottom: 3rem;}
+    h5 {
+            margin: 0 auto;
     }
+    }
+
 @media only screen and (max-width: 500px) {
-    .mention-container
-    max-width:100%;}
+    }
 }
 
 /* Outro */
 #outro {
     display: flex;
     flex-direction: column;
-    height: 8rem;
     align-content: center;
     padding-top: 2rem;
 }
@@ -155,6 +159,7 @@ blockquote {
     color: black;
     margin: 0 2rem;
     line-height: 1.5rem;
+    overflow: visible;
     
 }
 
@@ -163,9 +168,9 @@ blockquote {
 #contact-section {
     margin: 0 auto;
     position: relative;
-    top: 150px;
+    top: 6rem;
     display: flex;
-    height: 200px;
+    height: 10rem;
     align-items: center;
     flex-direction: column;
     background-color: #b564f6;
@@ -179,12 +184,11 @@ blockquote {
 #footer {
     position: relative;
     top: 70px;
-    bottom: 0px;
+    bottom: 0;
     text-align: center;
     background-color: #b564f6;
 }
 
 #footer h5 {
-    margin-left: 20px;
     margin-bottom: 90px;
 }
