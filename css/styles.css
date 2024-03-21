@@ -118,17 +118,29 @@ blockquote {
 
 #grid {
     margin: 0px auto;
-    width: 1000px;
+    max-width: 1000px;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1rem 1rem;
-    }
+
+.mention-container img{
+    width: 300px;
+}
 #grid h5 {
     margin: 0 auto;
 }
 #grid h6 {
     margin-bottom: 1rem;
+}
+/* Responsive layout - one column for tablets */
+@media only screen and (max-width: 1000px) {
+    #grid 
+      flex-direction: column;
+    }
+@media only screen and (max-width: 500px) {
+    .mention-container
+    max-width:100%;}
 }
 
 /* Outro */
