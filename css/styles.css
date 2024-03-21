@@ -54,7 +54,7 @@ li a {
     justify-content: center;
     align-items: center;
     height: 700px;
-    background-image: url(/images/img-minnesota.jpg);
+    background-image: url(../images/img-minnesota.jpg);
     opacity: 80%;
     background-repeat: no-repeat;
     background-position: center;
