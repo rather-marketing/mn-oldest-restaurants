@@ -112,7 +112,7 @@ blockquote {
 }    
 
 .headline h3 {
-    margin-top: 20px:
+    margin-top: 20px;
     align-items: center;
     }
 
@@ -123,6 +123,7 @@ blockquote {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1rem 1rem;
+}
 
 .mention-container img{
     width: 300px;
@@ -135,7 +136,7 @@ blockquote {
 }
 /* Responsive layout - one column for tablets */
 @media only screen and (max-width: 1000px) {
-    #grid 
+    #grid {
         flex-direction: column;}
     h6 {
         margin-bottom: 3rem;}
