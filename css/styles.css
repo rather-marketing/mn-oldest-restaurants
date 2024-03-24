@@ -242,6 +242,16 @@ blockquote {
     .header-title-text a {
         line-height: 1.3em;}
     .list-container img {
+        padding: 0 0;}
+    #outro p {
+        font-size: .9rem;
+        margin: 0 0;
+    }
+    #grid {
         padding: 0 0;
+    }
+    #banner-title h1 {
+        margin: 0 0;
+        font-size: 1.5rem;
     }
     }
