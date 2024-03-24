@@ -5,56 +5,66 @@ h6 {
     margin: 0;
     padding: 0;
 }
-
+font-face {
+    font-family: 'Montserrat','Catamaran';}
 body {
     background-color: whitesmoke;
     font-size: 18px;
     color: black;
     opacity: .9;
-    font-family: Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
+    margin: 0 auto;
 }
 
 /* Navigation */
 header {
-    padding: 0 20px;
-    height: 50px;
+    background-image: linear-gradient(#b564f6, hsl(3.87deg 72.09% 83.14%));
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+ }
+ .header-announcement-bar-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    pointer-events: auto;
     display: flex;
-    justify-content: space-between;
-    background-color: white;
 }
-#brand {
-    font-weight: bold;
-    font-size: 18px;
+.header-title-text {
     display: flex;
-    align-items: center;
-    background-color: white;
-    height: 4rem;
-}
+ }
 
-ul {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-ul li {
-    display: flex;
-    list-style: none;  
-    padding: 5px;
-    margin-left: 10px;
+ .header-title-text a {
     
-}
-ul li:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-}
+    text-decoration: none;
+    line-height:2em;
+    font-size: 29px;
+    color: #000000;
+ } 
+ .header-nav {
+    text-align: right;
+    margin-left: auto;
+    padding-left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
 
-header a {
-    color: black;
-    text-decoration: none;}
-
+}
+.header-nav-list a {
+    padding: .3em .3em;
+    backface-visibility: hidden;
+    margin-left: auto;
+    text-decoration: none;
+    color: #000000;
+}
 /* Intro Banner */
 #banner {
     background-color: black;
@@ -84,6 +94,7 @@ header a {
     color: black;
     margin: 2rem 2rem;
     line-height: 1.5rem;
+    font-family: "Catamaran" , sans-serif;
 }
 
 /* The List */
@@ -96,9 +107,13 @@ header a {
     padding-top:1rem;
 }
 .list-container p {
-    padding: 0 5rem;
     line-height: 1.5rem;
 }
+.list-container img {
+    width: 100%;
+    height: auto;
+}
+
 blockquote {
     font-weight: bold;
     font-style: italic;
@@ -165,12 +180,10 @@ blockquote {
     height: 10rem;
     align-items: center;
     flex-direction: column;
-    background-color: #b564f6;
+    background-color: #000000;
+    color: white;
 }
 
-.contact-margin-bottom {
-    margin-bottom: 40px;
-}
 
 /* The Copyright Footer */
 #footer {
@@ -178,11 +191,20 @@ blockquote {
     top: 70px;
     bottom: 0;
     text-align: center;
-    background-color: #b564f6;
+    background-color: #000000;
 }
 
 #footer h5 {
     margin-bottom: 90px;
+    color: white;
+}
+/*Large screens*/
+@media only screen and (min-width: 800px) {
+    .list-container p {
+        padding: 0 6rem;}
+    .list-container img {
+            padding: 1rem 10rem;
+        }
 }
 /* Responsive layout - one column for tablets */
 @media only screen and (max-width: 600px) {
@@ -192,16 +214,34 @@ blockquote {
         margin-bottom: 3rem;}
     #grid h5 {
         margin: 0 auto;}
+    .header-title-text a {
+        line-height: 1.3em;}
+    .list-container img {
+        padding: 1rem;
+        }
     }
 /*@media for small screens*/
 @media only screen and (max-width: 480px) {
     .list-container p {
-        padding: 0 1rem;
-        margin: 0 1rem;
+        padding: 0 auto;
+        margin: 0 auto;
+        font-size: 16px;
     }
     .list-container h4 {
-        padding: 0 2rem;
+        padding: 0 auto;
+        font-size: 16px;
     }
     .headline h3 {
-        margin: 0 1rem;}
+        margin: 0 auto;
+        font-size: 16px;
+    }   
+    #mentions {
+        max-width:450px;}
+    .header-nav {
+        padding-left: 5vw;}
+    .header-title-text a {
+        line-height: 1.3em;}
+    .list-container img {
+        padding: 0 0;
+    }
     }
