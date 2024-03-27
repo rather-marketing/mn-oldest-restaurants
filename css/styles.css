@@ -147,7 +147,7 @@ blockquote {
 }
 
 .mention-container img{
-    width: 300px;
+    width: 275px;
 }
 #grid h5 {
     margin: 0 auto;
@@ -213,7 +213,7 @@ blockquote {
     #grid h6 {
         margin-bottom: 3rem;}
     #grid h5 {
-        margin: 0 auto;}
+        margin: 0 .5rem;}
     .header-title-text a {
         line-height: 1.3em;}
     .list-container img {
